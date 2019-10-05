@@ -45,15 +45,15 @@ All of our models were trained on 80% of our data and verified on the remaining 
 All models were also tuned using GridSearchCV.
 
 ### Random Forest:
-![Feature Importance Plot - Random Forest](images/img3-rfg.png)
-![Confusion Matrix - Random Forest](images/img4-rfg.png)
+![Feature Importance Plot - Random Forest](Notebooks/images/img3-rfg.png)
+![Confusion Matrix - Random Forest](Notebooks/images/img4-rfg.png)
 
 ### Multinomial Naive Bayes:
-![Confusion Matrix - MNB](images/img8-mnbgs.png)
+![Confusion Matrix - MNB](Notebooks/images/img8-mnbgs.png)
 
 ### XGBoost:
-![Feature Importance Plot - XGBoost](images/img91-xgb.png)
-![Confusion Matrix - XGBoost](images/img92-xgb.png)
+![Feature Importance Plot - XGBoost](Notebooks/images/img91-xgb.png)
+![Confusion Matrix - XGBoost](Notebooks/images/img92-xgb.png)
 
 Key:
 - RF: Random Forest
