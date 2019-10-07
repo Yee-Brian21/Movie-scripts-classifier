@@ -37,15 +37,15 @@ The DataFrame was then was further filtered in order to keep the words that were
 This ended up cut down the number of features down to 1220.
 
 ## Modeling
-All of our models were trained on 80% of our data and verified on the remaining 20%.
-All models were also tuned using GridSearchCV.
+This is a classification problem as such, Random Forest, Multinomial Naive Bayes and XGBoost were chosen as potential models to fit the data. All of our models were trained on 80% of our data and verified on the remaining 20%.
+They were also models tuned using GridSearchCV library.
 
 ### Random Forest:
 ![Feature Importance Plot - Random Forest](Notebooks/images/img3-rfg.png)
 ![Confusion Matrix - Random Forest](Notebooks/images/img4-rfg.png)
 
 ### Multinomial Naive Bayes:
-![Confusion Matrix - MNB](Notebooks/images/img8-mnbgs.png)
+![Confusion Matrix - MNB](Notebooks/images/img7-mnb.png)
 
 ### XGBoost:
 ![Feature Importance Plot - XGBoost](Notebooks/images/img91-xgb.png)
@@ -73,5 +73,6 @@ Key:
 |XGBoost v      | 0.64          |  0.63          |  0.64         | 0.63          |
 |XGBoost g      | 0.63          |  0.63          |  0.63         | 0.62          |
 
-## Final Model
-Fantasy scripts were misclassified the most because fantasy could include romantic scenes and mystical creatures.
+## The Final Chosen Model
+As seen from the table above, the best results were obtained from Multinomial Naive Bayes- there are a two parametes to tune which lead to the results of the Vanilla and optimized model to perform the same. Fantasy scripts were misclassified the most due to the fact that fantasy could include romantic scenes and mystical creatures and both Romance and Horror could be sub-genres of movie that is mainly a fantasy.The model can be further enhanced be using more scripts hence allowing more feartures to classify on.
+
